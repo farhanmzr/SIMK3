@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".view.main.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/viewGuidiline"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/Responsive24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearUser"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/img_profile"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_nama"
+                    style="@style/TxtStyle.Bold16"
+                    android:text="Halo, farhan"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/img_profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/TxtStyle.Medium12"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:alpha="0.8"
+                        android:text="farhan@gmail.com" />
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/ic_elipse" />
+
+                    <TextView
+                        android:id="@+id/tv_unit"
+                        style="@style/TxtStyle.Medium12"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="0dp"
+                        android:alpha="0.8"
+                        android:text="P2K3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                tools:src="@tools:sample/avatars"
+                app:civ_border_width="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TxtStyle.Bold24"
+                android:layout_width="0dp"
+                android:layout_marginTop="40dp"
+                tools:text="SIM K3 - Inspeksi APAR\nFakultas Teknik\nUniversitas Diponegoro"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TxtStyle.Medium14"
+        android:text="Keselamatan dan kesehatan kerja seluruh civitas\nakademik merupakan hal yang utama"
+        android:textColor="@color/white"
+        android:alpha="0.64"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <View
+        android:id="@+id/viewGuidiline"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/btn_scan"
+        style="@style/Responsive24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sec500"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_scan" />
+
+        <TextView
+            style="@style/TxtStyle.Bold16"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="0dp"
+            android:paddingVertical="24dp"
+            android:text="SCAN QR"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TxtStyle.Bold18"
+        android:layout_marginTop="24dp"
+        android:text="DATA APAR"
+        android:textColor="@color/colorNeutral500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scan" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ic_bg_color_tersedia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingVertical="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_apar_tersedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="36sp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/sf_pro_display_bold"
+                        android:textColor="@color/white"
+                        android:text="12"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start"
+                        android:text="@string/total_apar_n_tersedia"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/linear_apar_kurang_bagus"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ic_bg_color_kurang_bagus">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingVertical="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_apar_kurang_bagus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="36sp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/sf_pro_display_bold"
+                        android:textColor="@color/white"
+                        android:text="12"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start"
+                        android:text="@string/total_apar_nkurang_bagus"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/linear_apar_kadaluwarsa"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/ic_bg_color_kadaluwarsa">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingVertical="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_apar_kadaluwarsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="36sp"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/sf_pro_display_bold"
+                        android:textColor="@color/white"
+                        android:text="12"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start"
+                        android:text="Total APAR\nKadaluwarsa"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_laporan_inspeksi"
+        style="@style/TxtStyle.Bold18"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        android:text="Laporan Inspeksi"
+        android:textColor="@color/colorNeutral500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tv_lihat_laporan_semua"
+        style="@style/TxtStyle.SemiBold14"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Lihat Semua"
+        android:textColor="@color/colorNeutral300"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_laporan_inspeksi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_laporan_inspeksi" />
+
+            <LinearLayout
+                android:id="@+id/linear_guest"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/TxtStyle.Bold18"
+                        android:text="Silahkan Masuk terlebih dahulu"
+                        android:textColor="@color/colorSecBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        style="@style/TxtStyle.Medium16"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:gravity="start"
+                        android:paddingEnd="16dp"
+                        android:letterSpacing="0.025"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/silahkan_memasukkan_akun_anda_maka_anda_dapat_melakukan_inspeksi_apar_terima_kasih"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <LinearLayout
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_sec_outline"
+                        style="@style/Responsive24dp"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_desc"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/tv_skip"
+                            style="@style/TxtStyle.Bold16"
+                            android:textColor="@color/colorSecondary500"
+                            android:padding="12dp"
+                            android:text="@string/masuk"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_laporan_inspeksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_laporan_inspeksi"
+        tools:listitem="@layout/item_rv_laporan_inspeksi"/>
+
+            <LinearLayout
+                android:id="@+id/linear_empty_inspeksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_laporan_inspeksi">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="24dp">
+
+                    <ImageView
+                        android:id="@+id/ic_remainder"
+                        android:layout_width="200dp"
+                        android:layout_height="185dp"
+                        android:background="@drawable/ic_empty_data"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_remainder_title"
+                        style="@style/TxtStyle.Bold24"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:text="@string/tidak_ada_data_apar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ic_remainder" />
+
+                    <TextView
+                        android:id="@+id/tv_remainder_desc"
+                        style="@style/TxtStyle.Medium16"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:letterSpacing="0.025"
+                        android:lineSpacingExtra="1dp"
+                        android:text="Oops..Saat ini tidak ada data Inspeksi."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_remainder_title" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_laporan_inspeksi" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

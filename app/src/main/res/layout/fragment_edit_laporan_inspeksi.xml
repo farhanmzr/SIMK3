@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.main.home.detaillaporaninspeksi.editlaporaninspeksi.EditLaporanInspeksiFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:id="@+id/linearbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/ic_back"
+                        android:layout_marginTop="0dp"
+                        style="@style/ImageBackStyle"
+                        android:paddingVertical="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_bold"
+                        android:text="@string/edit_inspeksi_apar"
+                        android:textColor="@color/colorNeutral500"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_reset"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginEnd="24dp"-->
+<!--                        android:fontFamily="@font/sf_pro_display_bold"-->
+<!--                        android:text="@string/reset"-->
+<!--                        android:textColor="@color/colorNeutral500"-->
+<!--                        android:textSize="16sp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_informasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="@style/Responsive24dp"
+                android:background="@drawable/bg_alpha_green"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearbar">
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="@string/unit_departemen"
+                            android:textColor="@color/colorNeutral300"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_unit_departemen"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_gravity="center_vertical"
+                            tools:text="Teknik Komputer"
+                            android:textColor="@color/colorNeutral500"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="@string/lokasi"
+                            android:textColor="@color/colorNeutral300"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_lokasi_apar"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_gravity="center_vertical"
+                            tools:text="Perpustakaan"
+                            android:textColor="@color/colorNeutral500"
+                            android:textSize="16sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_informasi">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_kondisi_tabung"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/kondisi_tabung"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_kondisi_tabung"
+                        app:placeholderText="Pilih Kondisi Tabung"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_kondisi_tabung"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_kondisi_tabung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    style="@style/TxtStyle.Medium16"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/colorNeutral500"
+                    android:text="@string/isi_apar"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorNeutral100"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintEnabled="false"
+                    app:placeholderText="Pilih Kondisi Isi APAR"
+                    app:placeholderTextColor="@color/colorNeutral200"
+                    app:expandedHintEnabled="false"
+                    app:placeholderTextAppearance="@style/TextHintStyle"
+                    app:endIconDrawable="@drawable/ic_arrow_down"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_isi_apar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:inputType="text"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/colorNeutral500"
+                        android:textColorHint="@color/colorNeutral200"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_tekanan_tabung"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/tekanan_tabung"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout3"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_tekanan_tabung"
+                        app:placeholderText="Pilih Tekanan Tabung"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_tekanan_tabung"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_tekanan_tabung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_handle"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/handle"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout4"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_handle"
+                        app:placeholderText="Pilih Kondisi Handle"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_handle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_handle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout4"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout4"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_label"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/label"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout5"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_label"
+                        app:placeholderText="Pilih Kondisi Label"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout5"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout5"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_mulut_pancar"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/mulut_pancar"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout6"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_mulut_pancar"
+                        app:placeholderText="Pilih Kondisi Mulut Pancar"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_mulut_pancar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_mulut_pancar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout6"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout6"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_pipa_pancar"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/pipa_pancar"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout7"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_pipa_pancar"
+                        app:placeholderText="Pilih Kondisi Pipa Pancar"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pipa_pancar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_pipa_pancar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout7"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout7"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout7"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                <TextView
+                    style="@style/TxtStyle.Medium16"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/colorNeutral500"
+                    android:text="@string/tanda_pemasangan"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout8"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorNeutral100"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintEnabled="false"
+                    app:placeholderText="Pilih Kondisi Tanda Pemasangan APAR"
+                    app:placeholderTextColor="@color/colorNeutral200"
+                    app:expandedHintEnabled="false"
+                    app:placeholderTextAppearance="@style/TextHintStyle"
+                    app:endIconDrawable="@drawable/ic_arrow_down"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_tanda_pemasangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:inputType="text"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/colorNeutral500"
+                        android:textColorHint="@color/colorNeutral200"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+                <TextView
+                    style="@style/TxtStyle.Medium16"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/colorNeutral500"
+                    android:text="@string/jarak_tanda"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout9"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorNeutral100"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintEnabled="false"
+                    app:placeholderText="Pilih Jarak Pemasangan APAR"
+                    app:placeholderTextColor="@color/colorNeutral200"
+                    app:expandedHintEnabled="false"
+                    app:placeholderTextAppearance="@style/TextHintStyle"
+                    app:endIconDrawable="@drawable/ic_arrow_down"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_jarak_pemasangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:inputType="text"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/colorNeutral500"
+                        android:textColorHint="@color/colorNeutral200"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                <TextView
+                    style="@style/TxtStyle.Medium16"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/colorNeutral500"
+                    android:text="@string/jarak_antar_apar"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout10"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorNeutral100"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintEnabled="false"
+                    app:placeholderText="Pilih Jarak Antar APAR"
+                    app:placeholderTextColor="@color/colorNeutral200"
+                    app:expandedHintEnabled="false"
+                    app:placeholderTextAppearance="@style/TextHintStyle"
+                    app:endIconDrawable="@drawable/ic_arrow_down"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_jarak_apar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:inputType="text"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/colorNeutral500"
+                        android:textColorHint="@color/colorNeutral200"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_warna_tabung"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/warna_tabung"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout11"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_warna_tabung"
+                        app:placeholderText="Pilih Kondisi Warna Tabung"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_warna_tabung"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_warna_tabung"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout11"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout11"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout11"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_info_pemasangan"
+                        style="@style/TxtStyle.Medium16"
+                        android:text="@string/pemasangan_apar"
+                        android:layout_marginStart="0dp"
+                        android:textColor="@color/colorNeutral500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout12"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxStrokeColor="@color/colorNeutral100"
+                        app:boxStrokeWidth="1.5dp"
+                        app:endIconDrawable="@drawable/ic_arrow_down"
+                        app:endIconMode="custom"
+                        app:expandedHintEnabled="false"
+                        app:hintEnabled="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_info_pemasangan"
+                        app:placeholderText="Pilih Kondisi Pemasangan APAR"
+                        app:placeholderTextAppearance="@style/TextHintStyle"
+                        app:placeholderTextColor="@color/colorNeutral200">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_pemasangan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:inputType="text"
+                            android:paddingStart="24dp"
+                            android:paddingEnd="24dp"
+                            android:textColor="@color/colorNeutral500"
+                            android:textColorHint="@color/colorNeutral200"
+                            android:textSize="16sp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_pemasangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_gallery"
+                        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout12"
+                        app:layout_constraintEnd_toEndOf="@+id/textInputLayout12"
+                        app:layout_constraintTop_toTopOf="@+id/textInputLayout12"
+                        android:contentDescription="@string/imageform" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+                <TextView
+                    style="@style/TxtStyle.Medium16"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/colorNeutral500"
+                    android:text="@string/petunjuk_penggunaan"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout13"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorNeutral100"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintEnabled="false"
+                    app:placeholderText="Pilih Kondisi Petunjuk Penggunaan APAR"
+                    app:placeholderTextColor="@color/colorNeutral200"
+                    app:expandedHintEnabled="false"
+                    app:placeholderTextAppearance="@style/TextHintStyle"
+                    app:endIconDrawable="@drawable/ic_arrow_down"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_petunjuk_penggunaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:inputType="text"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/colorNeutral500"
+                        android:textColorHint="@color/colorNeutral200"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+                <TextView
+                    style="@style/TxtStyle.Medium16"
+                    android:layout_marginStart="0dp"
+                    android:textColor="@color/colorNeutral500"
+                    android:text="@string/label_catatan_pemeriksaan"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout14"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/colorNeutral100"
+                    app:boxStrokeWidth="1.5dp"
+                    app:hintEnabled="false"
+                    app:placeholderText="Pilih Kondisi Pemasangan APAR"
+                    app:placeholderTextColor="@color/colorNeutral200"
+                    app:expandedHintEnabled="false"
+                    app:placeholderTextAppearance="@style/TextHintStyle"
+                    app:endIconDrawable="@drawable/ic_arrow_down"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_label_catatan_pemeriksaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:inputType="text"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/colorNeutral500"
+                        android:textColorHint="@color/colorNeutral200"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorNeutral100"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_simpan_perubahan"
+                style="@style/ButtonStyle"
+                app:cornerRadius="8dp"
+                android:text="@string/simpan_perubahan"
+                android:shadowRadius="0"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

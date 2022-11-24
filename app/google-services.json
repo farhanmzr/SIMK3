@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "381344915744",
+    "project_id": "simk3-160c6",
+    "storage_bucket": "simk3-160c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381344915744:android:92a300f32917f22ccf3745",
+        "android_client_info": {
+          "package_name": "com.aksantara.simk3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381344915744-pfce6rh0i3ke6pdsibksip7jgmvmq6ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aksantara.simk3",
+            "certificate_hash": "98e2ce717ed55635ca5860b36f01d988e9050ef8"
+          }
+        },
+        {
+          "client_id": "381344915744-uhp63dnj3vqpbkp4koub80201ct3ik4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEeiUV_z6wWgo24P5hY0xbmZcDubtGGEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381344915744-uhp63dnj3vqpbkp4koub80201ct3ik4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

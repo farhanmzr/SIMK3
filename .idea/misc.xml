@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_alpha_green.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_logout.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/bg_neutral100_outline.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_neutral500_outline.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_neutral_outline.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/bg_null.xml" value="0.148" />
+        <entry key="app/src/main/res/drawable/bg_orange.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/bg_primary.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/bg_primary_outline.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/bg_rb_primary_selector.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_rb_selector.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_red.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/bg_sec500.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/bg_sec_outline.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/bg_white.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/bg_yellow.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/bottom_navbar_home_selector.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/bottom_navbar_inventory_selector.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/bottom_navbar_profile_selector.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/bottom_navbar_remainder_selector.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/checkbox_selector.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_arrow_down.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_empty_data.xml" value="0.168" />
+        <entry key="app/src/main/res/drawable/ic_empty_notification.xml" value="0.168" />
+        <entry key="app/src/main/res/drawable/ic_error.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_eye.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_eye_close.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_failed.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_filter.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_inventory_inactive.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_loading.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_onboarding_indicator_active.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/ic_onboarding_indicator_inactive.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/ic_plus.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/ic_refresh.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/rb_selector.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/toggle_password_selector.xml" value="0.169" />
+        <entry key="app/src/main/res/font/font.xml" value="0.26666666666666666" />
+        <entry key="app/src/main/res/layout/activity_detail_inventory.xml" value="0.2419837537409149" />
+        <entry key="app/src/main/res/layout/activity_inspeksi.xml" value="0.24070716228467814" />
+        <entry key="app/src/main/res/layout/activity_laporan_inspeksi.xml" value="0.24070716228467814" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1837431693989071" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1504843449247056" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.19786339962121208" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.21262512207031253" />
+        <entry key="app/src/main/res/layout/bottom_sheet_kategori_akun.xml" value="0.15748748779296876" />
+        <entry key="app/src/main/res/layout/fragment_change_password.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/fragment_daftar_unit.xml" value="0.25984069879554333" />
+        <entry key="app/src/main/res/layout/fragment_detail_inventory.xml" value="0.2026507054296708" />
+        <entry key="app/src/main/res/layout/fragment_detail_laporan_inspeksi.xml" value="0.21526062067054338" />
+        <entry key="app/src/main/res/layout/fragment_dialog_add_unit.xml" value="0.20350577169730655" />
+        <entry key="app/src/main/res/layout/fragment_dialog_detail_apar.xml" value="0.2026507054296708" />
+        <entry key="app/src/main/res/layout/fragment_dialog_edit_unit.xml" value="0.24070716228467814" />
+        <entry key="app/src/main/res/layout/fragment_dialog_filter_inspeksi.xml" value="0.2754901376441928" />
+        <entry key="app/src/main/res/layout/fragment_dialog_guest_login.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/fragment_dialog_kondisi_tabung.xml" value="0.24070716228467814" />
+        <entry key="app/src/main/res/layout/fragment_dialog_laporan_inspeksi.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/fragment_dialog_media_apar.xml" value="0.29740478570960593" />
+        <entry key="app/src/main/res/layout/fragment_dialog_sheet_inspeksi.xml" value="0.19879486139319963" />
+        <entry key="app/src/main/res/layout/fragment_edit_akun.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/fragment_edit_apar.xml" value="0.2026507054296708" />
+        <entry key="app/src/main/res/layout/fragment_edit_laporan_inspeksi.xml" value="0.24070716228467814" />
+        <entry key="app/src/main/res/layout/fragment_forgot_password.xml" value="0.2543064369900272" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.27996516213773737" />
+        <entry key="app/src/main/res/layout/fragment_inspeksi.xml" value="0.3089304257528557" />
+        <entry key="app/src/main/res/layout/fragment_inventory.xml" value="0.1944979863931997" />
+        <entry key="app/src/main/res/layout/fragment_laporan_inspeksi.xml" value="0.2038470464517934" />
+        <entry key="app/src/main/res/layout/fragment_list_apar_kadaluwarsa.xml" value="0.2543064369900272" />
+        <entry key="app/src/main/res/layout/fragment_list_apar_kurang_baik.xml" value="0.2543064369900272" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25091094970703126" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.25086090143226214" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.2542092813027872" />
+        <entry key="app/src/main/res/layout/fragment_remainder.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/fragment_scan_qr.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/fragment_sheet_departemen.xml" value="0.24312927727106365" />
+        <entry key="app/src/main/res/layout/fragment_sheet_result_scan_apar.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/fragment_tambah_apar.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/item_dialog_berhasil_tambah_apar.xml" value="0.22840270996093753" />
+        <entry key="app/src/main/res/layout/item_dialog_guest_login.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/item_dialog_hapus_apar.xml" value="0.20179563916203505" />
+        <entry key="app/src/main/res/layout/item_dialog_hapus_inspeksi.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/item_dialog_image_inspeksi.xml" value="0.24070716228467814" />
+        <entry key="app/src/main/res/layout/item_dialog_inspeksi_berhasil.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/item_dialog_verifikasi_email.xml" value="0.2037124633789063" />
+        <entry key="app/src/main/res/layout/item_form_inspeksi.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/item_onboarding.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/item_progress_dialog.xml" value="0.16148648648648647" />
+        <entry key="app/src/main/res/layout/item_progress_dialog_inspeksi.xml" value="0.20179563916203505" />
+        <entry key="app/src/main/res/layout/item_rv_daftar_unit.xml" value="0.2677127080728871" />
+        <entry key="app/src/main/res/layout/item_rv_data_apar.xml" value="0.2370806890299184" />
+        <entry key="app/src/main/res/layout/item_rv_departemen.xml" value="0.1837431693989071" />
+        <entry key="app/src/main/res/layout/item_rv_kategori_akun.xml" value="0.25060882568359377" />
+        <entry key="app/src/main/res/layout/item_rv_laporan_inspeksi.xml" value="0.33735282355970375" />
+        <entry key="app/src/main/res/layout/item_rv_remainder.xml" value="0.2354693609049184" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.16216216216216217" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.24427083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
